@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#06070a" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%23050608'/%3E%3Ctext x='32' y='47' text-anchor='middle' font-family='Georgia' font-size='48' font-style='italic' fill='%23d7ff70'%3E%CE%B8%3C/text%3E%3C/svg%3E"
+    />
+    <meta
+      name="description"
+      content="THETA — 一个关于空间智能的沉浸式数字体验。智能不只回答问题，它开始理解空间。"
+    />
+    <title>THETA — Intelligence Takes Shape</title>
+    <script type="module" crossorigin src="./assets/index-BubAR2ij.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-B1awXFVk.css">
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="scene-wash" aria-hidden="true"></div>
+    <div id="webgl-root" aria-hidden="true"></div>
+
+    <div class="loader" id="loader" aria-live="polite">
+      <div class="loader__top">
+        <span>THETA / SPATIAL SYSTEMS</span>
+        <span>SHANGHAI · 31.2304° N</span>
+      </div>
+      <div class="loader__center">
+        <div class="loader__mark">θ</div>
+        <div class="loader__status">
+          <span id="loader-status">CALIBRATING SPATIAL MODEL</span>
+          <span id="loader-count">00</span>
+        </div>
+      </div>
+      <div class="loader__progress"><span></span></div>
+      <div class="loader__bottom">
+        <span>SYNAPSE / CONTEXT / MOTION</span>
+        <span>EDITION 01</span>
+      </div>
+    </div>
+
+    <div class="cursor" id="cursor" aria-hidden="true">
+      <span class="cursor__ring"></span>
+      <span class="cursor__dot"></span>
+      <span class="cursor__label"></span>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="返回 THETA 首页" data-cursor="回到起点">
+        <span class="brand__mark">θ</span>
+        <span class="brand__wordmark">
+          THETA
+          <small>SPATIAL INTELLIGENCE</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="主导航">
+        <a href="#signal">SIGNAL</a>
+        <a href="#process">SYSTEM</a>
+        <a href="#field">FIELD</a>
+        <a href="#horizon">HORIZON</a>
+      </nav>
+
+      <div class="header-tools">
+        <span class="local-time" id="local-time">SHANGHAI / 00:00:00</span>
+        <button
+          class="sound-toggle"
+          id="sound-toggle"
+          type="button"
+          aria-label="开启环境声音"
+          aria-pressed="false"
+        >
+          <span class="sound-bars" aria-hidden="true">
+            <i></i><i></i><i></i><i></i>
+          </span>
+          <span id="sound-label">SOUND OFF</span>
+        </button>
+      </div>
+    </header>
+
+    <aside class="chapter-rail" aria-label="章节导航">
+      <div class="chapter-rail__line"><span id="page-progress"></span></div>
+      <a href="#home" data-section="home" class="is-active"><b>01</b><span>ORIGIN</span></a>
+      <a href="#signal" data-section="signal"><b>02</b><span>SIGNAL</span></a>
+      <a href="#process" data-section="process"><b>03</b><span>SYSTEM</span></a>
+      <a href="#field" data-section="field"><b>04</b><span>FIELD</span></a>
+      <a href="#horizon" data-section="horizon"><b>05</b><span>HORIZON</span></a>
+    </aside>
+
+    <main>
+      <section class="hero scene-section" id="home" data-scene="0" data-section-name="home">
+        <div class="hero__coordinates coordinate-note">
+          <span>31.2304° N / 121.4737° E</span>
+          <span>MODEL STATUS: AWAKE</span>
+        </div>
+
+        <div class="hero__kicker">
+          <span class="status-dot"></span>
+          <span>AUTONOMOUS SPATIAL INTELLIGENCE</span>
+          <span class="kicker-code">[ θ / 001 ]</span>
+        </div>
+
+        <h1 class="hero__title">
+          <span class="hero__line hero__line--one">INTELLIGENCE</span>
+          <span class="hero__line hero__line--two">
+            <span>TAKES</span>
+            <em>shape.</em>
+          </span>
+        </h1>
+
+        <div class="hero__meta">
+          <p class="hero__intro">
+            我们正在构建一种不只理解语言，也理解位置、关系与运动的智能。
+            <span>Making thought tangible.</span>
+          </p>
+          <a class="text-link" href="#signal" data-cursor="向下探索">
+            TRACE THE SIGNAL
+            <span class="link-arrow">↘</span>
+          </a>
+        </div>
+
+        <div class="hero__side-note" aria-hidden="true">
+          <span>FIELD DEPTH</span>
+          <strong>+ 06.42</strong>
+        </div>
+
+        <a class="scroll-cue" href="#signal" aria-label="向下滚动">
+          <span>SCROLL TO ENTER</span>
+          <i></i>
+        </a>
+      </section>
+
+      <section class="signal scene-section" id="signal" data-scene="1" data-section-name="signal">
+        <div class="section-label">
+          <span>02 / SIGNAL</span>
+          <span>FROM CHAOS TO COHERENCE</span>
+        </div>
+
+        <div class="signal__grid">
+          <div class="signal__copy">
+            <p class="kicker reveal">THE FIRST PRINCIPLE</p>
+            <h2 class="signal__title">
+              <span class="reveal">FROM <span>NOISE,</span></span>
+              <em class="reveal">order.</em>
+            </h2>
+            <div class="signal__body reveal">
+              <p>
+                每一个答案出现之前，都存在一片尚未成形的可能性。THETA
+                把模型内部的关系映射为空间：让上下文可以被看见，让推理可以被触摸。
+              </p>
+              <span class="cn-caption">不是更多的信息，而是更清晰的结构。</span>
+            </div>
+          </div>
+
+          <div class="signal__stats reveal">
+            <div class="stat">
+              <span class="stat__index">01</span>
+              <strong>128K</strong>
+              <small>CONTEXT VECTORS<br />上下文向量</small>
+            </div>
+            <div class="stat">
+              <span class="stat__index">02</span>
+              <strong>24</strong>
+              <small>SPATIAL AXES<br />空间维度</small>
+            </div>
+            <div class="stat">
+              <span class="stat__index">03</span>
+              <strong>0.08<sup>s</sup></strong>
+              <small>THOUGHT LATENCY<br />思维响应</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="signal__ticker" aria-hidden="true">
+          <span>SIGNAL ACQUIRED</span><i></i><span>RELATION MAPPED</span><i></i
+          ><span>INTENT FORMING</span><i></i><span>SPACE ALIVE</span>
+        </div>
+
+        <div class="signal__note">
+          <span>FIG. 01</span>
+          <p>A field of probability, collapsing into meaning.</p>
+        </div>
+      </section>
+
+      <section class="process scene-section" id="process" data-scene="2" data-section-name="process">
+        <div class="process__stage">
+          <div class="process__header">
+            <div class="section-label">
+              <span>03 / SYSTEM</span>
+              <span>HOW THOUGHT MOVES</span>
+            </div>
+            <p class="process__intro">智能不是一条直线。它在场景中感知、连接、推演。</p>
+          </div>
+
+          <div class="process__track" id="process-track">
+            <article class="process-card process-card--one" data-cursor="PERCEIVE">
+              <div class="process-card__top">
+                <span>01 / PERCEIVE</span>
+                <span>φ → θ</span>
+              </div>
+              <div class="process-card__visual visual-perceive" aria-hidden="true">
+                <div class="perceive-orb">
+                  <i></i><i></i><i></i>
+                  <span>θ</span>
+                </div>
+                <div class="perceive-ring"></div>
+              </div>
+              <div class="process-card__bottom">
+                <h3>Find the signal<br /><em>in the noise.</em></h3>
+                <p>感知 · 从混沌中识别出值得关注的差异</p>
+              </div>
+            </article>
+
+            <article class="process-card process-card--two" data-cursor="RELATE">
+              <div class="process-card__top">
+                <span>02 / RELATE</span>
+                <span>CONTEXT 128K</span>
+              </div>
+              <div class="process-card__visual visual-relate" aria-hidden="true">
+                <div class="relation-map">
+                  <span style="--x: 18%; --y: 30%; --d: 0s"></span>
+                  <span style="--x: 62%; --y: 18%; --d: -1.2s"></span>
+                  <span style="--x: 78%; --y: 66%; --d: -2.3s"></span>
+                  <span style="--x: 34%; --y: 74%; --d: -0.6s"></span>
+                  <span style="--x: 48%; --y: 46%; --d: -3s"></span>
+                  <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <path d="M18,30 L62,18 L78,66 L34,74 L18,30 M48,46 L62,18 M48,46 L34,74 M48,46 L78,66" />
+                  </svg>
+                </div>
+              </div>
+              <div class="process-card__bottom">
+                <h3>Meaning lives<br /><em>between things.</em></h3>
+                <p>关联 · 在位置、时间与意图之间建立关系</p>
+              </div>
+            </article>
+
+            <article class="process-card process-card--three" data-cursor="REASON">
+              <div class="process-card__top">
+                <span>03 / REASON</span>
+                <span>TRAJECTORY / 03</span>
+              </div>
+              <div class="process-card__visual visual-reason" aria-hidden="true">
+                <div class="reason-stack">
+                  <span class="reason-layer r1"></span>
+                  <span class="reason-layer r2"></span>
+                  <span class="reason-layer r3"></span>
+                  <span class="reason-layer r4"></span>
+                  <i class="reason-path"></i>
+                  <b>θ</b>
+                </div>
+              </div>
+              <div class="process-card__bottom">
+                <h3>Think in trajectories,<br /><em>not lines.</em></h3>
+                <p>推演 · 同时看见多个方向，并选择下一步</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="field scene-section" id="field" data-scene="3" data-section-name="field">
+        <div class="section-label">
+          <span>04 / FIELD</span>
+          <span>LIVE RELATIONAL SPACE</span>
+        </div>
+
+        <div class="field__layout">
+          <div class="field__copy">
+            <p class="kicker">AN INTERACTIVE MANIFEST</p>
+            <h2>
+              THOUGHTS<br />
+              ARE NOT<br />
+              <em>lines.</em>
+            </h2>
+            <p class="field__description">
+              移动光标，扰动这片正在思考的场。<br />
+              每一个节点都在回应其他节点，每个答案都携带着整个场景的上下文。
+            </p>
+            <div class="field__legend">
+              <span><i class="legend-dot"></i> LIVE NODE</span>
+              <span><i class="legend-line"></i> RELATION</span>
+              <span><i class="legend-pulse"></i> TRACE</span>
+            </div>
+          </div>
+
+          <div class="field__viewport" data-cursor="扰动思维场">
+            <canvas id="thought-field" aria-label="可交互的思维关系网络"></canvas>
+            <div class="field__viewport-top">
+              <span>RELATIONAL FIELD / LIVE</span>
+              <span id="field-signal">SIGNAL 0.873</span>
+            </div>
+            <div class="field__crosshair crosshair--tl"></div>
+            <div class="field__crosshair crosshair--br"></div>
+            <div class="field__hint">
+              <span class="mouse-symbol"></span>
+              <span>MOVE TO DISTURB / 触碰思维场</span>
+            </div>
+            <div class="field__viewport-bottom">
+              <span id="field-coordinates">X 064.24 / Y 128.09</span>
+              <span>4,096 ACTIVE CONNECTIONS</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="manifesto scene-section"
+        id="manifesto"
+        data-scene="4"
+        data-section-name="manifesto"
+      >
+        <div class="manifesto__marquee" aria-hidden="true">
+          <div>
+            <span>SPACE IS THE NEW INTERFACE</span><i>✳</i>
+            <span>RELATION IS THE NEW DATA</span><i>✳</i>
+            <span>MOTION IS THE NEW MEANING</span><i>✳</i>
+            <span>SPACE IS THE NEW INTERFACE</span><i>✳</i>
+          </div>
+        </div>
+
+        <div class="manifesto__content">
+          <span class="manifesto__mark" aria-hidden="true">θ</span>
+          <p class="manifesto__index">THETA MANIFESTO / 2026</p>
+          <blockquote>
+            <span>The answer is a point.</span>
+            <em>Intelligence is the&nbsp;space around it.</em>
+          </blockquote>
+          <div class="manifesto__translation">
+            <span>答案是坐标，</span>
+            <span>智能是它周围的空间。</span>
+          </div>
+        </div>
+
+        <div class="manifesto__footer">
+          <p>
+            我们不把人机交互压缩成一行文字，<br />
+            而是为思考展开一个可以进入的世界。
+          </p>
+          <div class="manifesto__coords">
+            <span>θ = f(CONTEXT × INTENT × MOTION)</span>
+            <span>PERSPECTIVE / 04 OF 05</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="horizon scene-section" id="horizon" data-scene="5" data-section-name="horizon">
+        <div class="horizon__top">
+          <span>05 / HORIZON</span>
+          <span>THE SPACE IS OPEN</span>
+        </div>
+
+        <div class="horizon__center">
+          <p class="horizon__kicker">THE NEXT INTERFACE ISN'T A SCREEN.</p>
+          <h2>
+            MAKE ROOM<br />
+            <em>for what's next.</em>
+          </h2>
+          <a class="magnetic-cta" href="#home" data-magnetic data-cursor="重新进入">
+            <span>ENTER THE FIELD</span>
+            <i>↗</i>
+          </a>
+        </div>
+
+        <div class="horizon__orbit" aria-hidden="true">
+          <span>θ</span>
+          <i class="orbit ring-a"></i>
+          <i class="orbit ring-b"></i>
+          <i class="orbit ring-c"></i>
+        </div>
+
+        <footer class="site-footer">
+          <div>
+            <span class="footer-mark">θ</span>
+            <span>THETA SPATIAL INTELLIGENCE</span>
+          </div>
+          <div class="footer-center">
+            <span>SHANGHAI / 31.2304° N</span>
+            <span>2026 © EXPERIMENTAL INTERFACE</span>
+          </div>
+          <a href="#home">BACK TO ORIGIN ↑</a>
+        </footer>
+      </section>
+    </main>
+
+    <div class="desktop-only">
+      <span>θ</span>
+      <h2>THIS EXPERIENCE<br />NEEDS MORE SPACE.</h2>
+      <p>请在宽度至少 1100px 的桌面设备上打开。</p>
+    </div>
+
+    <noscript>
+      <div class="noscript">请开启 JavaScript，以进入 THETA 空间智能体验。</div>
+    </noscript>
+
+  </body>
+</html>
